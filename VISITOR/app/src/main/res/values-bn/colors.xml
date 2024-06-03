@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3AA57A</color>
+    <color name="colorGreenBlue">#2574a9</color>
+    <color name="colorSecondary">#6c757d</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#1A237E</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="colorBlue">#3490dc</color>
+    <color name="colorIndigo">#6574cd</color>
+    <color name="indigo800">#283593</color>
+    <color name="indigo900">#1A237E</color>
+    <color name="indigo600">#3949AB</color>
+    <color name="indigo500">#3F51B5</color>
+    <color name="colorPurple">#9561e2</color>
+    <color name="colorPink">#f66d9b</color>
+    <color name="colorRed">#e3342f</color>
+    <color name="colorOrange">#f6993f</color>
+    <color name="colorYellow">#ffed4a</color>
+    <color name="colorGreen">#38c172</color>
+    <color name="colorTeal">#4dc0b5</color>
+    <color name="colorCyan">#6cb2eb</color>
+    <color name="colorGray">#6c757d</color>
+    <color name="colorGrayDark">#343a40</color>
+    <color name="colorSuccess">#38c172</color>
+    <color name="colorInfo">#6cb2eb</color>
+    <color name="colorWarning">#ffed4a</color>
+    <color name="colorDanger">#e3342f</color>
+    <color name="colorLight">#f8f9fa</color>
+    <color name="colorDark">#343a40</color>
+    <color name="colorLightGrey">#d3d3d3</color>
+
+    <color name="disabled_color">#eae7e7</color>
+    <color name="enabledColor">#FFFFFF</color>
+
+    <color name="transparencyColor">#B3FFFFFF</color>
+    <color name="semiTransparentColor">#20ffffff</color>
+
+</resources>

@@ -1,0 +1,24 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="button_text_size">13dp</dimen>
+    <dimen name="public_scheme_view_fornt">10dp</dimen>
+    <dimen name="public_scheme_view_header_title_fornt">15dp</dimen>
+    <dimen name="public_scheme_view_header_button_fornt">15dp</dimen>
+    <dimen name="public_scheme_view_text_size">10sp</dimen>
+    <dimen name="listTextSize">16sp</dimen>
+    <dimen name="appbar_padding">16dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+    <dimen name="listTextSizeSmallDevice" >12sp</dimen>
+    <dimen name="designDevelopTextSize" >12sp</dimen>
+    <dimen name="cardWidthForMainActivity" >130dp</dimen>
+    <dimen name="cardHeightForMainActivity" >140dp</dimen>
+    <dimen name="textAwsomeWidthForMainActivity" >50dp</dimen>
+    <dimen name="textAwsomeHeightForMainActivity" >50dp</dimen>
+    <dimen name="iconSizeForMainActivity" >30dp</dimen>
+    <dimen name="textSizeForDashBoard" >13dp</dimen>
+</resources>

@@ -1,0 +1,657 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/disabled_color"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            >
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:elevation="1dp"
+                >
+
+                <LinearLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:layout_width ="match_parent"
+                    android:layout_height ="match_parent"
+                    android:orientation ="vertical"
+                    android:gravity="center"
+                    tools:context=".activity.MyProfileActivity"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".2"
+                            android:orientation="vertical"
+                            android:gravity="center">
+
+                            <LinearLayout
+                                android:clipToPadding="false"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_width="45dp"
+                                    android:layout_height="45dp"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="2dp"
+                                    android:fillViewport="true"
+                                    android:src="@drawable/gov_logo" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".7"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            >
+
+                            <TextView
+                                android:id="@+id/txtEtsBfdTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-condensed"
+                                android:text="@string/app_full_name"
+                                android:textStyle="bold"
+                                android:textSize="9pt"
+                                android:textColor="@color/white"
+                                android:textAlignment="center"
+                                />
+
+                            <TextView
+                                android:id="@+id/txtDepartmentTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-condensed"
+                                android:text="@string/departmnet"
+                                android:textStyle="bold"
+                                android:textSize="7pt"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-condensed"
+                                android:text="@string/sundorbon_slogan"
+                                android:textStyle="bold"
+                                android:textSize="5pt"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".2"
+                            android:orientation="vertical"
+                            android:gravity="center">
+
+                            <LinearLayout
+                                android:clipToPadding="false"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_width="45dp"
+                                    android:layout_height="45dp"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="2dp"
+                                    android:fillViewport="true"
+                                    android:src="@drawable/ets_bfd" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </androidx.appcompat.widget.Toolbar>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            tools:context=".MyProfileActivity"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="15dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardCornerRadius="3dp"
+                    app:cardElevation="0dp"
+                    android:layout_gravity="center"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/transparencyColor"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        >
+
+
+                        <TextView
+                            android:id="@+id/txtWelcome"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Welcome"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="12pt" />
+
+                        <TextView
+                            android:id="@+id/txtLoginUserName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Md. Arif Hossain"
+                            android:textColor="@color/black"
+                            android:textSize="8pt"
+                            android:textStyle="bold"
+                            android:drawableLeft="@drawable/baseline_perm_identity_red_700_24dp"
+                            android:drawablePadding="10dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/txtLoginUserDesignation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Software Engineer"
+                            android:textColor="@color/black"
+                            android:textSize="8pt"
+                            android:textStyle="bold"
+                            android:drawableLeft="@drawable/baseline_assignment_ind_purple_900_24dp"
+                            android:drawablePadding="10dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/txtLoginUserMobile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="01920869772"
+                            android:textColor="@color/black"
+                            android:textSize="8pt"
+                            android:textStyle="bold"
+                            android:drawableLeft="@drawable/baseline_card_travel_indigo_800_24dp"
+                            android:drawablePadding="10dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/txtLoginUserEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="arif@srabon.com"
+                            android:textColor="@color/black"
+                            android:textSize="8pt"
+                            android:textStyle="bold"
+                            android:drawableLeft="@drawable/baseline_brightness_high_indigo_800_24dp"
+                            android:drawablePadding="10dp"
+                            />
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutBtnTotalTrips"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:paddingTop="5dp">
+
+                <androidx.cardview.widget.CardView
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardElevation="0dp"
+                    app:cardCornerRadius="3dp"
+                    >
+                    <LinearLayout
+                        android:id="@+id/btnHeaderBottonTotalTrips"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:background="@color/transparencyColor"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".2"
+                                android:orientation="vertical"
+                                android:gravity="center">
+
+                                <LinearLayout
+                                    android:clipToPadding="false"
+                                    android:gravity="center"
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="5dp"
+                                    >
+
+                                    <com.ets.bfd.visitor.utilities.TextAwesome
+                                        android:layout_width="35dp"
+                                        android:layout_height="35dp"
+                                        android:fontFamily="sans-serif-condensed"
+                                        android:gravity="center_horizontal|center_vertical"
+                                        android:text="@string/fa_check"
+                                        android:textColor="@color/successColor"
+                                        android:textSize="10pt"
+                                        />
+
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".5"
+                                android:orientation="vertical"
+                                android:gravity="center">
+
+                                <LinearLayout
+                                    android:clipToPadding="false"
+                                    android:gravity="left"
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="5dp"
+                                    >
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="@string/total_trips"
+                                        android:padding="5dp"
+                                        android:textSize="10pt"
+                                        android:textColor="@color/colorPrimary"
+                                        android:textStyle="bold"
+                                        />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".2"
+                                android:orientation="vertical"
+                                android:gravity="center">
+
+                                <LinearLayout
+                                    android:clipToPadding="false"
+                                    android:gravity="left"
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="5dp"
+                                    >
+
+                                    <TextView
+                                        android:id="@+id/totalTrips"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="155"
+                                        android:padding="5dp"
+                                        android:textSize="10pt"
+                                        android:textColor="@color/colorPrimary"
+                                        android:textStyle="bold"
+                                        />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutBtnTotalRevenue"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:paddingTop="5dp">
+
+                <androidx.cardview.widget.CardView
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardElevation="0dp"
+                    app:cardCornerRadius="3dp"
+                    >
+                    <LinearLayout
+                        android:id="@+id/btnHeaderBottonTotalRevenue"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:background="@color/transparencyColor"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".2"
+                                android:orientation="vertical"
+                                android:gravity="center">
+
+                                <LinearLayout
+                                    android:clipToPadding="false"
+                                    android:gravity="center"
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="5dp"
+                                    >
+
+                                    <com.ets.bfd.visitor.utilities.TextAwesome
+                                        android:layout_width="35dp"
+                                        android:layout_height="35dp"
+                                        android:fontFamily="sans-serif-condensed"
+                                        android:gravity="center_horizontal|center_vertical"
+                                        android:text="@string/fa_binoculars"
+                                        android:textColor="@color/successColor"
+                                        android:textSize="10pt"
+                                        />
+
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".5"
+                                android:orientation="vertical"
+                                android:gravity="center">
+
+                                <LinearLayout
+                                    android:clipToPadding="false"
+                                    android:gravity="left"
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="5dp"
+                                    >
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="@string/total_reviews"
+                                        android:padding="5dp"
+                                        android:textSize="10pt"
+                                        android:textColor="@color/colorPrimary"
+                                        android:textStyle="bold"
+                                        />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".2"
+                                android:orientation="vertical"
+                                android:gravity="center">
+
+                                <LinearLayout
+                                    android:clipToPadding="false"
+                                    android:gravity="left"
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="5dp"
+                                    >
+
+                                    <TextView
+                                        android:id="@+id/totalReviews"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="155"
+                                        android:padding="5dp"
+                                        android:textSize="10pt"
+                                        android:textColor="@color/colorPrimary"
+                                        android:textStyle="bold"
+                                        />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="45dp"
+                android:paddingRight="45dp">
+
+                <androidx.cardview.widget.CardView
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:id="@+id/btnInspectionReport"
+                    android:layout_width="150dp"
+                    android:layout_height="170dp"
+                    android:layout_margin="10dp"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardElevation="0dp"
+                    app:cardCornerRadius="3dp"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:background="@color/transparencyColor"
+                        >
+
+                        <com.ets.bfd.visitor.utilities.TextAwesome
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="@string/fa_edit"
+                            android:textColor="@android:color/white"
+                            android:textSize="35dp"
+                            android:background="@drawable/btn_circle_bg_indigo"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/indigo500"
+                            android:layout_margin="10dp"/>
+                        <TextView
+                            android:id="@+id/textPermittedScopeInspection"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/today_tickets"
+                            android:padding="5dp"
+                            android:textSize="15dp"
+                            android:textColor="@color/indigo500"
+                            android:textStyle="bold"
+                            />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:id="@+id/btnProgressReport"
+                    android:layout_width="150dp"
+                    android:layout_height="170dp"
+                    android:layout_margin="10dp"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardElevation="0dp"
+                    app:cardCornerRadius="3dp"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:background="@color/transparencyColor"
+                        >
+
+                        <com.ets.bfd.visitor.utilities.TextAwesome
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="@string/fa_map_marker"
+                            android:textColor="@android:color/white"
+                            android:textSize="35dp"
+                            android:background="@drawable/btn_circle_bg_green"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/colorInfo"
+                            android:layout_margin="10dp"/>
+                        <TextView
+                            android:id="@+id/textPermittedScopeProgressReport"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/travel_history"
+                            android:padding="5dp"
+                            android:textSize="15dp"
+                            android:textColor="@color/colorInfo"
+                            android:textStyle="bold"
+                            />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+   <include layout="@layout/navigation_drawer"/>
+
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,117 @@
+apply plugin: 'com.android.application'
+//apply plugin: 'com.google.gms.google-services'
+//apply plugin: 'com.google.firebase.crashlytics'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        applicationId "com.ets.bfd.visitor"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+        ndk {
+            abiFilters 'armeabi-v7a', 'arm64-v8a'
+        }
+    }
+
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    lintOptions {
+        quiet true
+        abortOnError false
+        ignoreWarnings true
+        checkReleaseBuilds false
+    }
+
+}
+
+dependencies {
+    implementation 'androidx.navigation:navigation-fragment:2.1.0'
+    implementation 'androidx.navigation:navigation-ui:2.1.0'
+    implementation 'com.google.firebase:firebase-crashlytics:17.3.0'
+    implementation 'com.google.firebase:firebase-analytics:18.0.0'
+    def room_version = "2.2.5"
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
+
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+
+    implementation "androidx.room:room-runtime:$room_version"
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.1.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    annotationProcessor "androidx.room:room-compiler:$room_version"
+    // Test helpers
+    testImplementation "androidx.room:room-testing:$room_version"
+    //for material edit text
+    implementation 'com.rengwuxian.materialedittext:library:2.1.4'
+    implementation 'com.github.GrenderG:Toasty:1.4.1'
+    // for Retrofit and GSON library
+    implementation 'com.squareup.retrofit2:retrofit:2.5.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
+    // debug-db:1.0.4 is used To show android phone internal app database and shared preferences
+    //It will only compile in debug build and not in release build.
+    // We can also always get the debug address url from our code by calling the method DebugDB.getAddressLog();
+    // URL : https://github.com/nazmulcse/Android-Debug-Database
+    debugImplementation 'com.amitshekhar.android:debug-db:1.0.4'
+    // dexter runtime permissions
+    implementation 'com.karumi:dexter:6.2.2'
+    // Google play service location
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
+    // Custom toast library
+    implementation 'com.github.GrenderG:Toasty:1.4.2'
+    // For Bar chart
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+    implementation 'com.nightonke:boommenu:2.1.1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    // for searchable spinner
+    implementation 'com.toptoche.searchablespinner:searchablespinnerlibrary:1.3.1'
+    implementation 'com.android.support:design'
+    //layout expandable
+    implementation 'com.github.aakira:expandable-layout:1.6.0@aar'
+    implementation 'com.github.MikeOrtiz:TouchImageView:3.0.1'
+    // Photo View
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'com.github.chrisbanes:PhotoView:2.1.3'
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+
+    //Image Slider
+    implementation 'com.github.smarteist:autoimageslider:1.4.0'
+
+
+    implementation 'com.google.android.play:core:1.6.1'//for new version updater
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'com.google.android:flexbox:2.0.1'
+    implementation "com.google.crypto.tink:tink-android:1.5.0"
+    implementation "androidx.security:security-crypto:1.1.0-alpha03"
+
+
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.9.1'
+
+    //Bar Code
+    //https://github.com/journeyapps/zxing-android-embedded
+    //https://stackoverflow.com/questions/28232116/android-using-zxing-generate-qr-code
+    implementation 'com.journeyapps:zxing-android-embedded:4.3.0'
+}

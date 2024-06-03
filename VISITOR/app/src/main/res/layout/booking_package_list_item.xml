@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/idLayoutPackageList"
+    android:layout_height="wrap_content">
+
+
+    <androidx.cardview.widget.CardView
+        app:cardElevation="3dp"
+        app:cardCornerRadius="5dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_marginBottom="5dp">
+<!--        -->
+        <LinearLayout
+            android:id="@+id/lytUnionList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".1"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <com.ets.bfd.visitor.utilities.TextAwesome
+                            android:id="@+id/data_serial_no"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_margin="3dp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="01"
+                            android:textColor="@color/black"
+                            android:textSize="9sp"
+                            android:background="@drawable/btn_circle_green"
+                            />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".9"
+                        android:orientation="vertical"
+                        android:gravity="center_vertical"
+                        >
+
+                        <TextView
+                            android:id="@+id/txtVisitorName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed"
+                            android:text="Visitor Name"
+                            android:textStyle="bold"
+                            android:textSize="12dp"
+                            android:textColor="@color/colorGreen"
+                            android:layout_marginLeft="4dp"
+                            />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            >
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".4"
+                                android:orientation="vertical"
+                                >
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="sans-serif-condensed"
+                                    android:text="@string/tour_date"
+                                    android:textSize="8dp"
+                                    android:textStyle="normal" />
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".4"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/txtTourDate"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="sans-serif-condensed"
+                                    android:text="10-01-2022"
+                                    android:textSize="8dp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            >
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".4"
+                                android:orientation="vertical"
+                                >
+
+                                <TextView
+                                    android:id="@+id/textNumberOfAdult"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="sans-serif-condensed"
+                                    android:text="20 Adult"
+                                    android:textSize="8dp"
+                                    android:textStyle="normal" />
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".4"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/textNumberOfChild"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="sans-serif-condensed"
+                                    android:text="10 Child"
+                                    android:textSize="8dp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center_vertical"
+                            android:background="#74AE76"
+                            android:layout_margin="5dp">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:weightSum="3"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:id="@+id/packageImage"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:scaleType="centerCrop"
+                                    />
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    app:layout_constraintEnd_toEndOf="@+id/idPackageRowOperatorName"
+                                    app:layout_constraintStart_toEndOf="@+id/idPackageRowOperatorName">
+
+                                    <TextView
+                                        android:id="@+id/idPackageRowPackageTitle"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="12dp"
+                                        android:layout_marginTop="6dp"
+                                        android:fontFamily="@font/roboto_condensed_bold"
+                                        android:text="Adventure Tour"
+                                        android:textColor="@android:color/white"
+                                        android:textSize="18sp"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+                                    <TextView
+                                        android:id="@+id/idPackageRowOperatorName"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="0dp"
+                                        android:drawableStart="@drawable/ic_baseline_operators_home_work_24"
+                                        android:drawablePadding="10dp"
+                                        android:fontFamily="@font/roboto_condensed_regular"
+                                        android:text="Eco Tourism"
+                                        android:textColor="@android:color/white"
+                                        android:textSize="14sp"
+                                        app:layout_constraintStart_toStartOf="@+id/idPackageRowPackageTitle"
+                                        app:layout_constraintTop_toBottomOf="@+id/idPackageRowPackageTitle" />
+
+
+                                    <TextView
+                                        android:id="@+id/idPacakgeRowTourTime"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="0dp"
+                                        android:drawableStart="@drawable/ic_baseline_white_cal"
+                                        android:drawablePadding="10dp"
+                                        android:fontFamily="@font/roboto_condensed_regular"
+                                        android:text="3 days 2 nights"
+                                        android:textColor="@android:color/white"
+                                        android:textSize="14sp"
+                                        app:layout_constraintStart_toStartOf="@+id/idPackageRowOperatorName"
+                                        app:layout_constraintTop_toBottomOf="@+id/idPackageRowOperatorName" />
+
+                                    <TextView
+                                        android:id="@+id/idPacakgeRowCostRange"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="0dp"
+                                        android:drawableStart="@drawable/ic_currency_taka"
+                                        android:drawablePadding="10dp"
+                                        android:fontFamily="@font/roboto_condensed_regular"
+                                        android:text="@string/price_not_defined"
+                                        android:textColor="@android:color/white"
+                                        android:textSize="14sp"
+                                        app:layout_constraintStart_toStartOf="@+id/idPacakgeRowTourTime"
+                                        app:layout_constraintTop_toBottomOf="@+id/idPacakgeRowTourTime" />
+
+
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                            </LinearLayout>
+
+
+
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+<!--        <LinearLayout-->
+<!--            android:orientation="horizontal"-->
+<!--            android:weightSum="3"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent">-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/packageImage"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:scaleType="centerCrop"-->
+<!--            />-->
+
+<!--            <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="2"-->
+<!--                app:layout_constraintEnd_toEndOf="@+id/idPackageRowOperatorName"-->
+<!--                app:layout_constraintStart_toEndOf="@+id/idPackageRowOperatorName">-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/idPackageRowPackageTitle"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="12dp"-->
+<!--                    android:layout_marginTop="6dp"-->
+<!--                    android:fontFamily="@font/roboto_condensed_bold"-->
+<!--                    android:text="Adventure Tour"-->
+<!--                    android:textColor="@android:color/white"-->
+<!--                    android:textSize="18sp"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/idPackageRowOperatorName"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="0dp"-->
+<!--                    android:drawableStart="@drawable/ic_baseline_operators_home_work_24"-->
+<!--                    android:drawablePadding="10dp"-->
+<!--                    android:fontFamily="@font/roboto_condensed_regular"-->
+<!--                    android:text="Eco Tourism"-->
+<!--                    android:textColor="@android:color/white"-->
+<!--                    android:textSize="14sp"-->
+<!--                    app:layout_constraintStart_toStartOf="@+id/idPackageRowPackageTitle"-->
+<!--                    app:layout_constraintTop_toBottomOf="@+id/idPackageRowPackageTitle" />-->
+
+
+<!--                <TextView-->
+<!--                    android:id="@+id/idPacakgeRowTourTime"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="0dp"-->
+<!--                    android:drawableStart="@drawable/ic_baseline_white_cal"-->
+<!--                    android:drawablePadding="10dp"-->
+<!--                    android:fontFamily="@font/roboto_condensed_regular"-->
+<!--                    android:text="3 days 2 nights"-->
+<!--                    android:textColor="@android:color/white"-->
+<!--                    android:textSize="14sp"-->
+<!--                    app:layout_constraintStart_toStartOf="@+id/idPackageRowOperatorName"-->
+<!--                    app:layout_constraintTop_toBottomOf="@+id/idPackageRowOperatorName" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/idPacakgeRowCostRange"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="0dp"-->
+<!--                    android:drawableStart="@drawable/ic_currency_taka"-->
+<!--                    android:drawablePadding="10dp"-->
+<!--                    android:fontFamily="@font/roboto_condensed_regular"-->
+<!--                    android:text="@string/price_not_defined"-->
+<!--                    android:textColor="@android:color/white"-->
+<!--                    android:textSize="14sp"-->
+<!--                    app:layout_constraintStart_toStartOf="@+id/idPacakgeRowTourTime"-->
+<!--                    app:layout_constraintTop_toBottomOf="@+id/idPacakgeRowTourTime" />-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/imageView5"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="36dp"-->
+<!--                    android:layout_marginEnd="16dp"-->
+<!--                    android:src="@drawable/ic_baseline_arrow_forward24"-->
+<!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintTop_toTopOf="parent" />-->
+
+
+<!--            </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+<!--        </LinearLayout>-->
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_margin="3dp"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/idVesselsChildLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="2"
+      >
+
+
+        <Button
+            android:id="@+id/idVesselRegisterBtn"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginRight="8dp"
+
+
+            android:layout_weight="1"
+            android:onClick="RegisteredBtnClicked"
+            android:text="@string/Registered"
+            android:textSize="10dp"
+            app:icon="@drawable/registered"
+            app:strokeColor="#3AA57A"
+            app:strokeWidth="2dp" />
+
+
+        <Button
+            android:id="@+id/idVesselUnRegisterBtn"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+
+            android:layout_marginLeft="8dp"
+
+            android:layout_weight="1"
+            android:onClick="UnRegisteredBtnClicked"
+            android:text="@string/Unregistered"
+            android:textSize="9dp"
+
+
+            app:icon="@drawable/unregistered"
+            app:strokeColor="#3AA57A"
+            app:strokeWidth="2dp" />
+
+
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/idRegisteredBtnChildLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+ >
+
+        <AutoCompleteTextView
+            android:id="@+id/idRegisteredVesselNameWithNumber"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Vessel Number"
+            android:inputType="none" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:id="@+id/idUnregisterVesselLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/idRegisteredBtnChildLayout">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/idUnRegisteredVesselTypeLayout"
+
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <AutoCompleteTextView
+                android:id="@+id/idUnRegisteredVesselType"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Vessel Type"
+                android:inputType="none" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/idUnRegisteredVesselNameLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:id="@+id/idUnRegisteredVesselName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Vessel Name" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+
+        android:id="@+id/linearLayout8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:layout_gravity="right"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idUnregisterVesselLayout">
+
+        <Button
+            android:id="@+id/idPopupVesselCancelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:text="@string/cancel"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/idPopupVesselSaveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:text="@string/save"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="end">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        tools:context=".activity.PublicSearchUpMemberActivity">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:stretchColumns="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                >
+
+
+                <LinearLayout
+                    android:id="@+id/lytMasterForFilter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp"
+                    >
+
+                    <!-- For Step1 Header 1 -->
+                    <LinearLayout
+                        android:id="@+id/lytHeaderForFilter"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="0dp"
+                        android:onClick="onClickedLayoutFilterForExpand"
+                        >
+
+                        <com.ets.bfd.visitor.utilities.TextAwesome
+                            android:id="@+id/btnIconFilter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="45dp"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="sans-serif-condensed"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="@string/fa_filter"
+                            android:textColor="@color/colorSuccess"
+                            android:textSize="8pt"
+                            android:textAlignment="textStart"
+                            android:layout_marginLeft="5dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/txtFilterTitle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/label_filter"
+                            android:textSize="8pt"
+                            android:layout_marginLeft="8dp"
+                            android:textColor="@color/colorSuccess"
+                            android:textAllCaps="true"
+                            android:layout_weight=".9"/>
+
+                        <RelativeLayout
+                            android:id="@+id/btnExpandForFilter"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight=".1"
+                            android:textAlignment="textEnd">
+
+                            <View
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:background="@drawable/triangle"
+                                android:textAlignment="textEnd"
+                                android:layout_marginRight="5dp"/>
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <View style="@style/Divider.Horizontal"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lytMasterForFilterContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/idTrackingNumberLayout"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        >
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/idTrackingNumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:drawableStart="@drawable/ic_baseline_face_24"
+                            android:drawablePadding="10dp"
+                            android:hint="@string/tracking_number"
+                            android:inputType="number"
+                            android:focusableInTouchMode="true"
+                            />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/idPackageFormPhoneLayout"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/idPhoneNumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:drawableStart="@drawable/ic_baseline_phone_24"
+                            android:drawablePadding="10dp"
+                            android:hint="@string/mobile_number"
+                            android:inputType="number"
+                            android:focusableInTouchMode="true"
+                            />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/idPackageFormCalendarLayout"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp">
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/idTourDate"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:cursorVisible="false"
+                                android:drawableStart="@drawable/ic_baseline_month_24"
+                                android:drawablePadding="10dp"
+                                android:focusable="false"
+                                android:hint="@string/tour_date" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".4">
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".4"
+                            android:padding="5dp"
+                            >
+                            <com.google.android.material.button.MaterialButton
+                                style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                                app:icon="@drawable/ic_baseline_clear_24"
+                                app:iconTint="@color/white"
+                                app:iconGravity="textStart"
+                                android:id="@+id/btnResetFilter"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".5"
+                                android:backgroundTint="@color/colorGray"
+                                android:fontFamily="sans-serif-condensed"
+                                android:padding="10dp"
+                                android:text="@string/label_clear"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/button_text_size"
+                                android:theme="@style/Theme.MaterialComponents.Light"
+                                app:cornerRadius="10dp"
+                                android:textAllCaps="false"
+                                />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".4"
+                            android:padding="5dp"
+                            >
+                            <com.google.android.material.button.MaterialButton
+                                style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                                app:icon="@drawable/ic_baseline_filter_list_24"
+                                app:iconGravity="textStart"
+                                app:iconTint="@color/white"
+                                android:id="@+id/btnFilter"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".5"
+                                android:backgroundTint="@color/colorSuccess"
+                                android:fontFamily="sans-serif-condensed"
+                                android:padding="10dp"
+                                android:text="@string/label_search"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/button_text_size"
+                                android:theme="@style/Theme.MaterialComponents.Light"
+                                app:cornerRadius="10dp"
+                                android:textAllCaps="false"
+                                />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:paddingTop="15dp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".4"
+                            android:orientation="vertical"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="30dp">
+                            <View style="@style/Divider.Horizontal"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lytHideFilter"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".2"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            >
+
+                            <com.ets.bfd.visitor.utilities.TextAwesome
+                                android:id="@+id/btnHideFilter"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_margin="2dp"
+                                android:fontFamily="sans-serif-condensed"
+                                android:gravity="center_horizontal|center_vertical"
+                                android:text="@string/fa_chevron_up"
+                                android:textColor="@color/colorSuccess"
+                                android:textSize="16sp"
+                                android:background="@drawable/btn_circle_green"
+                                android:onClick="onClickedLayoutFilterForExpand"
+                                />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".4"
+                            android:orientation="vertical"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="30dp">
+                            <View style="@style/Divider.Horizontal"/>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/lytMasterForRecyclerList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="1dp"
+                            android:background="@color/colorSuccess"
+                            android:orientation="horizontal"
+                            >
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".9"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp">
+
+                                <com.ets.bfd.visitor.utilities.TextAwesome
+                                    android:id="@+id/btnIconList"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:fontFamily="sans-serif-condensed"
+                                    android:gravity="center_horizontal|center_vertical"
+                                    android:text="@string/fa_list"
+                                    android:textColor="@color/white"
+                                    android:textSize="7pt"
+                                    android:textAlignment="textStart"
+                                    android:layout_marginTop="7dp"
+                                    />
+                                <TextView
+                                    android:id="@+id/txtListTitle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="One Day Ticket"
+                                    android:fontFamily="sans-serif-condensed"
+                                    android:gravity="center_horizontal|center_vertical"
+                                    android:textSize="9pt"
+                                    android:layout_gravity="center"
+                                    android:textColor="@color/white"
+                                    android:textStyle="bold"
+                                    android:padding="5dp"
+                                    android:paddingLeft="5dp"
+                                    android:paddingRight="5dp"
+                                    />
+
+                                <com.ets.bfd.visitor.utilities.TextAwesome
+                                    android:id="@+id/total_list_count"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="30dp"
+                                    android:layout_margin="5dp"
+                                    android:padding="5dp"
+                                    android:fontFamily="sans-serif-condensed"
+                                    android:gravity="center_horizontal|center_vertical"
+                                    android:text="0"
+                                    android:textColor="@color/white"
+                                    android:textSize="7pt"
+                                    android:background="@drawable/rounded_background_purple"
+                                    />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerListView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="8dp"
+                        />
+
+                </LinearLayout>
+
+            </TableLayout>
+
+        </ScrollView>
+
+
+
+    </LinearLayout>
+
+    <include layout="@layout/navigation_drawer" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

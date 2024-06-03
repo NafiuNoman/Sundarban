@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view"
+    android:scrollbars="horizontal">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/dashboard"
+            android:icon="@drawable/ic_home_black_24"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/checkInCheckOut"
+            android:icon="@drawable/ic_baseline_qr_code_24"
+            android:title="Ticket Register" />
+
+        <item
+            android:id="@+id/btn_regAndRenew"
+            android:icon="@drawable/ic_baseline_app_registration"
+            android:title="@string/menu_regAndRenew" />
+
+        <item
+            android:id="@+id/languageSwitcher"
+            android:icon="@drawable/ic_language_black_24dp"
+            android:title="Switch to English" />
+
+
+
+        <item
+            android:id="@+id/btnLogin"
+            android:title="@string/login" />
+        <item
+            android:id="@+id/btnLogout"
+            android:title="@string/logout" />
+
+    </group>
+
+    <!-- bold text menu item -->
+    <item
+        android:id="@+id/text_bold"
+        android:title=""
+        app:showAsAction="always|withText"
+        android:orderInCategory="2"
+        />
+
+</menu>

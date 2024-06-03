@@ -1,0 +1,111 @@
+<resources>
+    <string name="app_name">ETS-FD</string>
+    <string name="app_full_name"> Eco-Tourism Sundarban,Forest Department, Bangladesh </string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="update_app_version">New version is available. Please update ETS-BFD</string>
+    <string name="action_update">Update</string>
+    <string name="switchToBangla">Switch to Bangla</string>
+    <string name="switchToEnglish">Switch to English</string>
+    <string name="action_search">অনুসন্ধান করুন</string>
+    <string name="label_financial_year"> Financial Year</string>
+    <string name="label_division">Division</string>
+    <string name="label_district">District</string>
+    <string name="label_upazila">Upazila</string>
+    <string name="label_union">Union Council</string>
+    <string name="check_gps_data_latitude">Latitude : </string>
+    <string name="check_gps_data_longitude">Longitude : </string>
+    <string name="check_gps_data_date">Date : </string>
+    <string name="select_image_file">Select an Image File.</string>
+    <string name="login">Login</string>
+    <string name="label_remember_me">Remember me</string>
+    <string name="logout">Logout</string>
+    <string name="label_user">Users</string>
+    <string name="message_error_userpass">User name/password is not correct</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_regAndRenew">Registration/Renew Application</string>
+    <string name="logout_confirmation_msg">আপনি কি অ্যাপ থেকে বের হতে চান?</string>
+    <string name="cancel">বাতিল</string>
+    <string name="save">সংরক্ষণ করুন</string>
+    <string name="dashboard">ড্যাশবোর্ড</string>
+    <string name="label_change_password">পাসওয়ার্ড পরিবর্তন</string>
+    <string name="label_user_name">User Name</string>
+    <string name="label_password">Password</string>
+    <string name="label_current_password">বর্তমান পাসওয়ার্ড</string>
+    <string name="label_new_password">নতুন পাসওয়ার্ড</string>
+    <string name="confirm_new_password">নতুন পাসওয়ার্ড নিশ্চিত করুন</string>
+    <string name="error_message_username">ব্যবহারকারীর নাম লিখুন</string>
+    <string name="error_message_current_pass">বর্তমান পাসওয়ার্ড লিখুন</string>
+    <string name="error_message_new_pass">নতুন পাসওয়ার্ড লিখুন</string>
+    <string name="error_message_pass_match">পাসওয়ার্ড মেলেনি। আবার চেষ্টা করুন</string>
+    <string name="button_change_password">পাসওয়ার্ড পরিবর্তন করুন</string>
+    <string name="message_internet_con">আপনার ইন্টারনেট সংযোগ পরীক্ষা করুন. আপনার ডিভাইসে কোনও সক্রিয় ইন্টারনেট সংযোগ নেই</string>
+    <string name="message_loading">লোডিং..., অনুগ্রহ করে অপেক্ষা করুন</string>
+    <string name="message_confirm">নিশ্চিতকরণ</string>
+    <string name="label_confirmation">আপনি কি নিশ্চিত?</string>
+    <string name="pick">বাছাই</string>
+    <string name="message_enter_password">পাসওয়ার্ড লিখুন</string>
+    <string name="message_select_financial_year">Please select a financial year</string>
+    <string name="message_select_division">Please select a division</string>
+    <string name="message_select_district">Please select a district</string>
+    <string name="message_select_upazila">Please select a upazila</string>
+    <string name="message_select_union_ward">Please select a union</string>
+    <string name="label_male">Male</string>
+    <string name="label_female">Female</string>
+    <string name="label_yes">Yes</string>
+    <string name="label_no">No</string>
+    <string name="label_not_known">Not Known</string>
+    <string name="label_active">Active</string>
+    <string name="label_inactive">Inactive</string>
+    <string name="up_assset_unit_price_taka">৳</string>
+    <string name="label_select">Select</string>
+    <string name="label_designation">Designation</string>
+    <string name="label_gender">Gender</string>
+    <string name="label_location">Location</string>
+    <string name="label_address">Address</string>
+    <string name="label_name_en">Name in English</string>
+    <string name="label_description">Description</string>
+    <string name="label_filter">Filter</string>
+    <string name="label_clear_filter">Clear Filter</string>
+    <string name="label_clear">Clear</string>
+    <string name="label_reset">Reset</string>
+    <string name="label_submit">Submit</string>
+    <string name="label_update">Update</string>
+    <string name="label_required_sign"> <sup>*</sup> </string>
+    <string name="message_success_financial_year">Financial Year Data Synced successfully.</string>
+    <string name="message_error_no_financial_year">Financial Year Data not found.</string>
+    <string name="search">Search</string>
+    <string name="message_enter_user_name">অনুগ্রহ করে ব্যবহারকারীর নাম লিখুন</string>
+
+    <!--    write new string from here-->
+
+
+    <!--    end New String-->
+
+
+    <string name="design_develop_by">Designed and developed by <a href="https://technovista.com.bd/">Technovista Limited</a></string>
+    <string name="technovista_limited">TechnoVista Limited</string>
+
+
+    <string-array name="empty_array_list">
+        <item>Select</item>
+    </string-array>
+
+    <string-array name="yes_no_status">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+    <string-array name="status_active_inactive">
+        <item>Active</item>
+        <item>Inactive</item>
+    </string-array>
+
+
+</resources>

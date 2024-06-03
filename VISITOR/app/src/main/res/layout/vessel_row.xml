@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/idVesselRowVesselName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Vessel"
+        android:textSize="14sp"
+        android:textColor="#666666"
+        android:fontFamily="@font/roboto_condensed_regular"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/idVesselRowNetPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_currency_tk_gray"
+        android:text="500"
+        android:textColor="#666666"
+        android:textSize="14sp"
+        android:fontFamily="@font/roboto_condensed_regular"
+        app:layout_constraintStart_toEndOf="@+id/idVesselRowVesselName"
+        app:layout_constraintTop_toTopOf="@+id/idVesselRowVesselName" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="X"
+        android:fontFamily="@font/roboto_condensed_regular"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/idVesselRowNetPrice"
+        app:layout_constraintTop_toTopOf="@+id/idVesselRowNetPrice" />
+
+    <TextView
+        android:id="@+id/idVesselRowVesselCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textColor="#666666"
+        android:fontFamily="@font/roboto_condensed_regular"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="@+id/textView2" />
+
+    <TextView
+        android:fontFamily="@font/roboto_condensed_regular"
+        android:id="@+id/idVesselRowTotalPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_currency_tk_gray"
+
+        android:text="Total 500"
+        app:layout_constraintStart_toEndOf="@+id/idVesselRowVesselCount"
+        app:layout_constraintTop_toTopOf="@+id/idVesselRowVesselCount" />
+
+    <ImageView
+        android:id="@+id/idVesselRowRemove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:background="@drawable/ic_baseline_remove_24"
+        app:layout_constraintStart_toEndOf="@+id/idVesselRowTotalPrice"
+        app:layout_constraintTop_toTopOf="@+id/idVesselRowTotalPrice" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
